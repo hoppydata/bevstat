@@ -16,3 +16,5 @@ Depends:
     magrittr,
     readr,
     stringr
+URL: https://github.com/hoppydata/bevstat
+BugReports: https://github.com/hoppydata/bevstat/issues
