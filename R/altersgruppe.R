@@ -8,7 +8,7 @@
 #' @examples
 altersgruppe<-function(my_data){
 
-x <- mydata%>%
+x <- my_data%>%
   group_by(`Gemeinde (Vergröberung über Politischen Bezirk)`,`Alter in Einzeljahren`) %>%
   summarise(sum_year_Fallzahl=sum(Fallzahl)) %>%
     group_by(`Gemeinde (Vergröberung über Politischen Bezirk)`) %>%
