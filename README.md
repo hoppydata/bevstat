@@ -13,7 +13,7 @@ Design, Coding Conventions, funktionale Standards, oder auch Package Help Files 
 ### Info durchschnittsalter()
 - Alter wird per Hilfefuktion parse_number() extrahiert. Alternativ wäre Regex eine Möglichkeit.
 - Berechnung des Alters als avg_age Spalte 
-- Nächstee Schritte wäre klärung von gewünschter Struktur, Variablenlabel, Nachkommastellen,..
+- Nächste Schritte wäre Klärung von gewünschter Struktur, Variablenlabel, Nachkommastellen,..
 
 ### Info altersgruppe()
 - Berechnung des relativen Anteils in der rel_Fallzahl Spalte
