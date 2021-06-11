@@ -1,5 +1,9 @@
 # bevstat
-Integerierte Auswertung von Bevölkerungsdaten
+Integerierte Auswertung von Bevölkerungsdaten (MVP)
+
+Ausbaustufe: reine Funktionalität (MVP), 
+weitere Steps wären abhängig von weiteren Anforderungen bzgl.
+Design, Coding Conventions, funktionale Standards, oder auch Package Help Files (Examples, descriptions)
 
 ### Info read_stat_data()
 - Als Parameter wird die url übergeben
@@ -9,9 +13,11 @@ Integerierte Auswertung von Bevölkerungsdaten
 ### Info durchschnittsalter()
 - Alter wird per Hilfefuktion parse_number() extrahiert. Alternativ wäre Regex eine Möglichkeit.
 - Berechnung des Alters als avg_age Spalte 
+- Nächstee Schritte wäre klärung von gewünschter Struktur, Variablenlabel, Nachkommastellen,..
 
 ### Info altersgruppe()
-- Berechnung des relativen anteils in der rel_Fallzahl Spalte
+- Berechnung des relativen Anteils in der rel_Fallzahl Spalte
+- Nächste Schritte wären Prozent vs. Anteil, Labels, Struktur vom Data Frame
 
 ### Info plot_kids() 
 - standard ggplot mit angegebenen parametern
@@ -20,6 +26,8 @@ Integerierte Auswertung von Bevölkerungsdaten
 - facetting nach bundesland wäre eine gute Erweiterung
 
 ### Verwendung
+- install_github("hoppydata/bevstat")
+- library(bevstat)
 - my_data<-read_stat_data("https://data.statistik.gv.at/data/OGD_bevstandjbab2002_BevStand_2020.csv")
 - my_data %>% durchschnittsalter()
 - my_data %>% altersgruppe()
